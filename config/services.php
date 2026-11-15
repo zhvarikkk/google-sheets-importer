@@ -13,7 +13,12 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
-
+    'google_sheets' => [
+    'credentials' => env(
+        'GOOGLE_APPLICATION_CREDENTIALS'
+    ),
+    ],
+    
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],
